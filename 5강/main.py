@@ -1,25 +1,30 @@
-pizza = input('피자 가게가 열렸나요(예/아니요)?')
-chicken = input('치킨 가게가 열렸나요(예/아니요)?')
-편의점 = input('편의점이 열렸나요(예/아니요)?')
-가게 = input('가게가 열렸나요(예/아니요)?')
-if pizza == '예':
-    print( '피자 가게로 가자')
-elif chicken == '예':
-    print('치킨 가게로 가자')
-elif 편의점 == '예':
-    print('편의점으로 가자')
-elif 가게 == '예':
-    print('가게로 가자')
-else : 
-    print('집으로 가자')
-
-
+data = input("입력값:")
+if int(data)-20 > 255:
+    print(255)
+elif int(data)-20 < 0:
+    print(0)
+elif 0< int(data)-20 <255:
+    print(int(data)-20)
+    
 print (3>5)
 print (3<5)
 print (3==5)
 print (3!=5)
 
-x = 4
-print ( 1<x<5)
+x=4
+print(1<x<5)
 
-print((3==3) and (4!=3))
+print((3==3)and (4!=3))
+
+data = input("입력값:")
+if int(data) % 2 == 0:
+    print("짝수")
+else:
+    print("홀수")
+
+
+data = input("입력값:")
+if int(data)+20 < 255:
+    print(int(data)+20)
+else:
+    print("255")
